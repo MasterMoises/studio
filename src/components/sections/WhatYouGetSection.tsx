@@ -1,5 +1,6 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Youtube, FileText, ListChecks, Gift, CheckCircle2 } from 'lucide-react';
+import { Youtube, FileText, ListChecks, Gift } from 'lucide-react';
 import Image from 'next/image';
 
 const items = [
@@ -9,7 +10,7 @@ const items = [
     description: 'Assiste, aplica e recebe resposta. Sem blá blá blá.',
     imageSrc: 'https://placehold.co/300x200.png',
     imageAlt: 'Video aulas mockup',
-    aiHint: 'video lesson'
+    aiHint: 'online course interface' // Refinado
   },
   {
     icon: FileText,
@@ -17,7 +18,7 @@ const items = [
     description: 'Missões diárias pra sair do “oi” até o encontro.',
     imageSrc: 'https://placehold.co/300x200.png',
     imageAlt: 'PDF desafio mockup',
-    aiHint: 'pdf document'
+    aiHint: 'ebook cover design' // Refinado
   },
   {
     icon: ListChecks,
@@ -25,7 +26,7 @@ const items = [
     description: 'Marca o que já fez e mantém o foco.',
     imageSrc: 'https://placehold.co/300x150.png',
     imageAlt: 'Checklist mockup',
-    aiHint: 'checklist progress'
+    aiHint: 'digital checklist app' // Refinado
   },
   {
     icon: Gift,
@@ -33,7 +34,7 @@ const items = [
     description: 'Aprenda a chamar pro rolê com classe, sem se humilhar.',
     imageSrc: 'https://placehold.co/300x150.png',
     imageAlt: 'Mini-guia mockup',
-    aiHint: 'guide book'
+    aiHint: 'strategy guide cover' // Refinado
   },
 ];
 

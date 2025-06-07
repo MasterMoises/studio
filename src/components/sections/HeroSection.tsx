@@ -1,6 +1,7 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { MessageSquare, Eye, AlertTriangle, Flame } from 'lucide-react';
+import { MessageSquare, Eye, AlertTriangle, Flame, Sparkles, CheckCircle } from 'lucide-react';
 
 export function HeroSection() {
   return (
@@ -10,8 +11,8 @@ export function HeroSection() {
           <Image
             src="https://i.imgur.com/5BCY0pj.png"
             alt="Atração Acelerada Logo"
-            width={300}
-            height={150}
+            width={250} // Reduzido de 300 para 250
+            height={125} // Ajustado proporcionalmente
             className="h-auto"
             priority
           />
@@ -20,9 +21,19 @@ export function HeroSection() {
         <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl leading-tight mb-6 uppercase">
           Do <span className="text-primary-red">“Oi”</span> ao Encontro em <span className="text-primary-red">7 Dias</span>
         </h1>
-        <p className="font-headline text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-10 uppercase">
+        <p className="font-headline text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 uppercase">
           Pra Parar de Ser Só Mais Um na Lista de Visualizados Dela
         </p>
+
+        <div className="mb-12 text-center">
+          <p className="text-2xl md:text-3xl text-accent-yellow font-semibold mb-4 flex items-center justify-center">
+            <Sparkles className="w-8 h-8 mr-2 text-accent-yellow" />
+            Transforme Sua Abordagem e Conquiste Encontros Reais!
+          </p>
+          <p className="text-lg text-foreground max-w-3xl mx-auto leading-relaxed">
+            Com o nosso desafio prático e direto ao ponto, você vai destravar suas conversas, criar conexões autênticas e finalmente marcar aquele encontro. Chega de ser ignorado — é hora de virar o jogo!
+          </p>
+        </div>
 
         <div className="max-w-3xl mx-auto bg-card p-6 md:p-8 rounded-lg shadow-xl border border-primary-custom mb-12">
           <h2 className="font-headline text-2xl md:text-3xl text-primary-red mb-4 uppercase flex items-center justify-center">
@@ -60,11 +71,11 @@ export function HeroSection() {
             Um passo a passo direto, prático e <span className="font-bold">100% digital</span> pra você:
           </p>
           <ul className="text-left space-y-3 text-lg md:text-xl max-w-md mx-auto">
-            <li className="flex items-center"><MessageSquare className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Saber o que falar na primeira mensagem</li>
-            <li className="flex items-center"><MessageSquare className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Manter a conversa viva com interesse real</li>
-            <li className="flex items-center"><MessageSquare className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Saber o momento certo de convidar pro rolê</li>
-            <li className="flex items-center"><MessageSquare className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Gerar atração com palavras e atitude</li>
-            <li className="flex items-center"><MessageSquare className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Marcar o encontro — mesmo que ela já tenha te ignorado antes</li>
+            <li className="flex items-center"><CheckCircle className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Saber o que falar na primeira mensagem</li>
+            <li className="flex items-center"><CheckCircle className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Manter a conversa viva com interesse real</li>
+            <li className="flex items-center"><CheckCircle className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Saber o momento certo de convidar pro rolê</li>
+            <li className="flex items-center"><CheckCircle className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Gerar atração com palavras e atitude</li>
+            <li className="flex items-center"><CheckCircle className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Marcar o encontro — mesmo que ela já tenha te ignorado antes</li>
           </ul>
         </div>
       </div>
