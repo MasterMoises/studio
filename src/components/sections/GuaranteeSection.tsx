@@ -1,8 +1,20 @@
+
+'use client';
 import { ShieldCheck, RefreshCw } from 'lucide-react';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { cn } from '@/lib/utils';
 
 export function GuaranteeSection() {
+  const { ref, isInView } = useScrollAnimation({ threshold: 0.2 });
+
   return (
-    <section className="py-12 md:py-20 bg-[#B00020] text-white">
+    <section
+      ref={ref}
+      className={cn(
+        "py-12 md:py-20 bg-[#B00020] text-white scroll-animate-fade-in-up",
+        { 'is-visible': isInView }
+      )}
+    >
       <div className="container mx-auto px-4 text-center">
         <ShieldCheck className="w-16 h-16 mx-auto mb-6 text-white" />
         <h2 className="font-headline text-3xl md:text-4xl mb-4 uppercase">
