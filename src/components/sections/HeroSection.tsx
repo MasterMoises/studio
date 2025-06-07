@@ -16,7 +16,7 @@ export function HeroSection() {
   return (
     <section className="py-12 md:py-20 text-center bg-gradient-to-b from-background to-card text-foreground overflow-hidden">
       <div className="container mx-auto px-4">
-        <div 
+        <div
           className={cn(
             "flex justify-center mb-8 scroll-animate-fade-in-up",
             { 'is-visible': titleInView }
@@ -27,14 +27,14 @@ export function HeroSection() {
           <Image
             src="https://i.imgur.com/5BCY0pj.png"
             alt="Atração Acelerada Logo"
-            width={280} 
-            height={140} 
+            width={280}
+            height={140}
             className="h-auto"
             priority
           />
         </div>
 
-        <h1 
+        <h1
           ref={titleRef}
           className={cn(
             "font-headline text-4xl md:text-6xl lg:text-7xl leading-tight mb-4 uppercase scroll-animate-fade-in-up",
@@ -44,17 +44,8 @@ export function HeroSection() {
         >
           Do <span className="text-primary-red">“Oi”</span> ao Encontro em <span className="text-primary-red">7 Dias</span>
         </h1>
-        <p 
-          ref={subtitleRef}
-          className={cn(
-            "text-lg md:text-xl text-accent-yellow font-semibold mb-6 max-w-2xl mx-auto scroll-animate-fade-in-up",
-            { 'is-visible': subtitleInView }
-          )}
-          style={{ transitionDelay: '200ms' }}
-        >
-          O método prático para você parar de ser ignorado e finalmente conquistar encontros reais, mesmo que seja tímido ou não saiba o que dizer.
-        </p>
-        <p 
+        
+        <p
           ref={subtitleRef}
           className={cn(
             "font-headline text-2xl md:text-3xl lg:text-4xl text-muted-foreground mb-10 uppercase scroll-animate-fade-in-up",
@@ -64,8 +55,8 @@ export function HeroSection() {
         >
           Pra Parar de Ser Só Mais Um na Lista de Visualizados Dela
         </p>
-        
-        <div 
+
+        <div
           ref={introTextRef}
           className={cn(
             "mb-12 text-center scroll-animate-fade-in-up",
@@ -78,7 +69,7 @@ export function HeroSection() {
           </p>
         </div>
 
-        <div 
+        <div
           ref={painCardRef}
           className={cn(
             "max-w-3xl mx-auto bg-card p-6 md:p-8 rounded-lg shadow-2xl border border-primary-custom mb-12 transition-all duration-300 ease-in-out hover:shadow-primary/30 hover:scale-[1.02] hover:-translate-y-1 scroll-animate-fade-in-up",
@@ -108,8 +99,8 @@ export function HeroSection() {
             </p>
           </div>
         </div>
-        
-        <div 
+
+        <div
           ref={solutionCardRef}
           className={cn(
             "max-w-3xl mx-auto bg-card p-6 md:p-8 rounded-lg shadow-2xl border border-primary-custom transition-all duration-300 ease-in-out hover:shadow-primary/30 hover:scale-[1.02] hover:-translate-y-1 scroll-animate-fade-in-up",
