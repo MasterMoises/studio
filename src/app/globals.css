@@ -107,7 +107,8 @@
   }
   .bg-primary-hover:hover {
     background-color: hsl(var(--primary) / 0.8); /* Darker red with 80% opacity */
-    transition: background-color 0.2s ease-in-out;
+    transform: translateY(-2px);
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
   }
   a {
     @apply text-accent hover:underline;

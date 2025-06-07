@@ -77,7 +77,7 @@ export function PricingSection() {
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {plans.map((plan) => (
-            <Card key={plan.name} className={`flex flex-col bg-card border-2 ${plan.isPopular ? 'border-accent-yellow shadow-accent-yellow/40 shadow-2xl' : 'border-primary-custom'} rounded-lg overflow-hidden`}>
+            <Card key={plan.name} className={`flex flex-col bg-card border-2 ${plan.isPopular ? 'border-accent-yellow shadow-accent-yellow/40 shadow-2xl' : 'border-primary-custom'} rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-1`}>
               {plan.isPopular && (
                 <div className="bg-accent-yellow text-accent-foreground py-2 px-4 text-center font-bold font-headline uppercase tracking-wider">
                   <Star className="inline-block w-5 h-5 mr-2" /> Mais Escolhido <Star className="inline-block w-5 h-5 ml-2" />
@@ -102,7 +102,10 @@ export function PricingSection() {
                 ))}
               </CardContent>
               <CardFooter className="p-6 bg-secondary/20">
-                <Button size="lg" className={`w-full font-headline text-lg uppercase py-4 ${plan.isPopular ? 'bg-accent-yellow text-accent-foreground hover:bg-accent-yellow/90' : 'bg-primary text-primary-foreground bg-primary-hover'}`}>
+                <Button 
+                  size="lg" 
+                  className={`w-full font-headline text-lg uppercase py-4 ${plan.isPopular ? 'bg-accent-yellow text-accent-foreground hover:bg-accent-yellow/90 transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-0.5' : 'bg-primary text-primary-foreground bg-primary-hover'}`}
+                >
                   {plan.ctaText}
                 </Button>
               </CardFooter>

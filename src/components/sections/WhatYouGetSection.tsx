@@ -47,15 +47,15 @@ export function WhatYouGetSection() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {items.map((item, index) => (
-            <Card key={index} className="bg-card border-primary-custom shadow-xl flex flex-col hover:shadow-primary/30 transition-shadow duration-300">
-              <CardHeader className="flex-shrink-0 p-6">
+            <Card key={index} className="bg-card border-primary-custom shadow-xl flex flex-col hover:shadow-primary/30 transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-1">
+              <CardHeader className="flex-shrink-0 p-6 md:p-8">
                 <div className="flex items-center mb-3">
                   <item.icon className="w-10 h-10 mr-4 text-accent-yellow" />
                   <CardTitle className="font-headline text-2xl lg:text-3xl text-accent-yellow uppercase">{item.title}</CardTitle>
                 </div>
                 <p className="text-muted-foreground text-base lg:text-lg">{item.description}</p>
               </CardHeader>
-              <CardContent className="flex-grow flex flex-col justify-center items-center p-6 pt-0">
+              <CardContent className="flex-grow flex flex-col justify-center items-center p-6 md:p-8 pt-0">
                 <div className="relative w-full aspect-[3/2] max-w-sm rounded-md overflow-hidden shadow-lg mx-auto">
                   <Image 
                     src={item.imageSrc} 
