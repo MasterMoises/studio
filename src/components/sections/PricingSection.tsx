@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check, X, Star, FileText, ListChecks, Youtube, Gift, Headphones, Brain, MessageCircle, RefreshCw } from 'lucide-react';
@@ -77,9 +78,12 @@ export function PricingSection() {
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {plans.map((plan) => (
-            <Card key={plan.name} className={`flex flex-col bg-card border-2 ${plan.isPopular ? 'border-accent-yellow shadow-accent-yellow/40 shadow-2xl' : 'border-primary-custom'} rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-1`}>
+            <Card 
+              key={plan.name} 
+              className={`flex flex-col bg-card border-2 ${plan.isPopular ? 'border-accent-yellow shadow-2xl shadow-accent/40 hover:shadow-[0_10px_35px_-5px_hsl(var(--accent)/0.5)]' : 'border-primary-custom shadow-lg'} rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-1`}
+            >
               {plan.isPopular && (
-                <div className="bg-accent-yellow text-accent-foreground py-2 px-4 text-center font-bold font-headline uppercase tracking-wider">
+                <div className="bg-accent-yellow text-accent-foreground py-2 px-4 text-center font-bold font-headline uppercase tracking-wider shadow-lg">
                   <Star className="inline-block w-5 h-5 mr-2" /> Mais Escolhido <Star className="inline-block w-5 h-5 ml-2" />
                 </div>
               )}
