@@ -106,11 +106,31 @@
     color: hsl(var(--primary));
   }
   .bg-primary-hover:hover {
-    background-color: hsl(var(--primary) / 0.8); /* Darker red with 80% opacity */
+    background-color: hsl(var(--primary) / 0.85) !important; /* Slightly darker red */
     transform: translateY(-2px);
     transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
   }
   a {
     @apply text-accent hover:underline;
   }
+}
+
+@layer utilities {
+  .scroll-animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  .scroll-animate-fade-in-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .delay-0 { transition-delay: 0ms !important; }
+  .delay-100 { transition-delay: 100ms !important; }
+  .delay-150 { transition-delay: 150ms !important; }
+  .delay-200 { transition-delay: 200ms !important; }
+  .delay-300 { transition-delay: 300ms !important; }
+  .delay-400 { transition-delay: 400ms !important; }
+  .delay-500 { transition-delay: 500ms !important; }
 }
