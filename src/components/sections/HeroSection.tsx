@@ -1,30 +1,33 @@
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { MessageSquare, Eye, AlertTriangle, Flame, Sparkles, CheckCircle } from 'lucide-react';
+import { Eye, AlertTriangle, Flame, Sparkles, CheckCircle } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="py-12 md:py-20 text-center bg-background text-foreground">
+    <section className="py-12 md:py-20 text-center bg-gradient-to-b from-background to-card text-foreground">
       <div className="container mx-auto px-4">
         <div className="flex justify-center mb-8">
           <Image
             src="https://i.imgur.com/5BCY0pj.png"
             alt="Atração Acelerada Logo"
-            width={250} // Reduzido de 300 para 250
-            height={125} // Ajustado proporcionalmente
+            width={280} 
+            height={140} 
             className="h-auto"
             priority
           />
         </div>
 
-        <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl leading-tight mb-6 uppercase">
+        <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl leading-tight mb-4 uppercase">
           Do <span className="text-primary-red">“Oi”</span> ao Encontro em <span className="text-primary-red">7 Dias</span>
         </h1>
-        <p className="font-headline text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 uppercase">
+        <p className="text-lg md:text-xl text-accent-yellow font-semibold mb-6 max-w-2xl mx-auto">
+          O método prático para você parar de ser ignorado e finalmente conquistar encontros reais, mesmo que seja tímido ou não saiba o que dizer.
+        </p>
+        <p className="font-headline text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-10 uppercase">
           Pra Parar de Ser Só Mais Um na Lista de Visualizados Dela
         </p>
-
+        
         <div className="mb-12 text-center">
           <p className="text-2xl md:text-3xl text-accent-yellow font-semibold mb-4 flex items-center justify-center">
             <Sparkles className="w-8 h-8 mr-2 text-accent-yellow" />
@@ -35,7 +38,7 @@ export function HeroSection() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto bg-card p-6 md:p-8 rounded-lg shadow-xl border border-primary-custom mb-12">
+        <div className="max-w-3xl mx-auto bg-card p-6 md:p-8 rounded-lg shadow-2xl border border-primary-custom mb-12">
           <h2 className="font-headline text-2xl md:text-3xl text-primary-red mb-4 uppercase flex items-center justify-center">
             <AlertTriangle className="w-8 h-8 mr-2 text-primary-red" />
             A Dor Real Que Você Tá Sentindo
@@ -59,7 +62,7 @@ export function HeroSection() {
           </div>
         </div>
         
-        <div className="max-w-3xl mx-auto bg-background p-6 md:p-8 rounded-lg shadow-xl border border-primary-custom">
+        <div className="max-w-3xl mx-auto bg-card p-6 md:p-8 rounded-lg shadow-2xl border border-primary-custom">
           <h2 className="font-headline text-2xl md:text-3xl text-primary-red mb-6 uppercase flex items-center justify-center">
             <Flame className="w-8 h-8 mr-2 text-primary-red" />
             A Solução: O Desafio de 7 Dias
@@ -70,12 +73,12 @@ export function HeroSection() {
           <p className="text-lg md:text-xl mb-6">
             Um passo a passo direto, prático e <span className="font-bold">100% digital</span> pra você:
           </p>
-          <ul className="text-left space-y-3 text-lg md:text-xl max-w-md mx-auto">
-            <li className="flex items-center"><CheckCircle className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Saber o que falar na primeira mensagem</li>
-            <li className="flex items-center"><CheckCircle className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Manter a conversa viva com interesse real</li>
-            <li className="flex items-center"><CheckCircle className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Saber o momento certo de convidar pro rolê</li>
-            <li className="flex items-center"><CheckCircle className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Gerar atração com palavras e atitude</li>
-            <li className="flex items-center"><CheckCircle className="w-6 h-6 mr-3 text-primary-red flex-shrink-0" /> Marcar o encontro — mesmo que ela já tenha te ignorado antes</li>
+          <ul className="text-left space-y-4 text-lg md:text-xl max-w-md mx-auto">
+            <li className="flex items-start"><CheckCircle className="w-7 h-7 mr-3 text-primary-red flex-shrink-0 mt-1" /> Saber o que falar na primeira mensagem</li>
+            <li className="flex items-start"><CheckCircle className="w-7 h-7 mr-3 text-primary-red flex-shrink-0 mt-1" /> Manter a conversa viva com interesse real</li>
+            <li className="flex items-start"><CheckCircle className="w-7 h-7 mr-3 text-primary-red flex-shrink-0 mt-1" /> Saber o momento certo de convidar pro rolê</li>
+            <li className="flex items-start"><CheckCircle className="w-7 h-7 mr-3 text-primary-red flex-shrink-0 mt-1" /> Gerar atração com palavras e atitude</li>
+            <li className="flex items-start"><CheckCircle className="w-7 h-7 mr-3 text-primary-red flex-shrink-0 mt-1" /> Marcar o encontro — mesmo que ela já tenha te ignorado antes</li>
           </ul>
         </div>
       </div>

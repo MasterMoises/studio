@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer base {
   :root {
     --background: 0 0% 7%; /* #121212 Matte Black */
@@ -110,6 +106,10 @@ body {
     color: hsl(var(--primary));
   }
   .bg-primary-hover:hover {
-    background-color: hsl(356, 93%, 35%); /* Darker red #B2060F */
+    background-color: hsl(var(--primary) / 0.8); /* Darker red with 80% opacity */
+    transition: background-color 0.2s ease-in-out;
+  }
+  a {
+    @apply text-accent hover:underline;
   }
 }
