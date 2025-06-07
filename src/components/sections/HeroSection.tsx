@@ -24,7 +24,7 @@ export function HeroSection() {
         <p className="text-lg md:text-xl text-accent-yellow font-semibold mb-6 max-w-2xl mx-auto">
           O método prático para você parar de ser ignorado e finalmente conquistar encontros reais, mesmo que seja tímido ou não saiba o que dizer.
         </p>
-        <p className="font-headline text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-10 uppercase">
+        <p className="font-headline text-2xl md:text-3xl lg:text-4xl text-muted-foreground mb-10 uppercase">
           Pra Parar de Ser Só Mais Um na Lista de Visualizados Dela
         </p>
         
@@ -35,7 +35,7 @@ export function HeroSection() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto bg-card p-6 md:p-8 rounded-lg shadow-2xl border border-primary-custom mb-12">
+        <div className="max-w-3xl mx-auto bg-card p-6 md:p-8 rounded-lg shadow-2xl border border-primary-custom mb-12 transition-all duration-300 ease-in-out hover:shadow-primary/30 hover:scale-[1.02] hover:-translate-y-1">
           <h2 className="font-headline text-2xl md:text-3xl text-primary-red mb-4 uppercase flex items-center justify-center">
             <AlertTriangle className="w-8 h-8 mr-2 text-primary-red" />
             A Dor Real Que Você Tá Sentindo
@@ -59,7 +59,7 @@ export function HeroSection() {
           </div>
         </div>
         
-        <div className="max-w-3xl mx-auto bg-card p-6 md:p-8 rounded-lg shadow-2xl border border-primary-custom">
+        <div className="max-w-3xl mx-auto bg-card p-6 md:p-8 rounded-lg shadow-2xl border border-primary-custom transition-all duration-300 ease-in-out hover:shadow-primary/30 hover:scale-[1.02] hover:-translate-y-1">
           <h2 className="font-headline text-2xl md:text-3xl text-primary-red mb-6 uppercase flex items-center justify-center">
             <Flame className="w-8 h-8 mr-2 text-primary-red" />
             A Solução: O Desafio de 7 Dias
