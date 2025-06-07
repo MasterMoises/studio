@@ -29,10 +29,7 @@ export function HeroSection() {
         </p>
         
         <div className="mb-12 text-center">
-          <p className="text-2xl md:text-3xl text-accent-yellow font-semibold mb-4 flex items-center justify-center">
-            <Sparkles className="w-8 h-8 mr-2 text-accent-yellow" />
-            Transforme Sua Abordagem e Conquiste Encontros Reais!
-          </p>
+          
           <p className="text-lg text-foreground max-w-3xl mx-auto leading-relaxed">
             Com o nosso desafio prático e direto ao ponto, você vai destravar suas conversas, criar conexões autênticas e finalmente marcar aquele encontro. Chega de ser ignorado — é hora de virar o jogo!
           </p>
